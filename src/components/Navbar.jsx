@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar glass">
-      <h1 className="logo">🚀 Rajat.dev</h1>
+      <h1 className="logo">🚀 Rajat.web_Developer</h1>
 
       <ul className="nav-links">
         <li>
