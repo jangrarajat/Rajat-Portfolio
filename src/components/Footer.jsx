@@ -12,7 +12,7 @@ const Footer = () => {
         <a href="https://twitter.com/" target="_blank" rel="noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/rajat-jangra-839740367/" target="_blank" rel="noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
         </a>
       </div>
