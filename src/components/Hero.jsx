@@ -98,7 +98,7 @@ const Hero = () => {
                         <h3>📍 Contact Info</h3>
                         <ul>
                             <li>📍 Hamindpur, Alwar (Rajasthan), PIN: 301701</li>
-                            <li>📞 73571 67649</li>
+                         
                             <li>📧 rajatjangra940@gmail.com</li>
                             <li>🌐 GitHub: <a href="https://github.com/jangrarajat" target="_blank">github.com/jangrarajat</a></li>
                         </ul>
