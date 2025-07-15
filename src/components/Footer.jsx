@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer-section">
       <p>© {new Date().getFullYear()} Rajat Jangra. All rights reserved.</p>
       <div className="social-links">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/jangrarajat" target="_blank" rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
         </a>
         <a href="https://twitter.com/" target="_blank" rel="noreferrer">
