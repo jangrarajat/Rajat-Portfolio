@@ -23,8 +23,8 @@ const Hero = () => {
 
             {/* Optional Hero Image */}
             <img
-                style={{ width: 600, borderRadius: 30 ,margin:'auto'}}
-                src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1600&q=80"
+                style={{ width: 600, borderRadius: 500 ,margin:'auto'}}
+                src="https://i.postimg.cc/J0bgVSYH/128.jpg"
                 alt="Web Developer"
                 className="hero-image"
             />
