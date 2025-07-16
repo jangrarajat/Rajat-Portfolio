@@ -1,6 +1,8 @@
 // src/components/Hero.jsx
 import "../styles/add.css";
- 
+import ResumeDownloadButton from "./Button";
+
+
 
 
 const Hero = () => {
@@ -15,24 +17,22 @@ const Hero = () => {
                     who builds visually stunning, responsive, and functional websites.
                 </p>
 
-                <a href="/resume.pdf" download className="resume-btn animated-btn">
-                    📄 Download Resume
-                </a>
+
 
             </div>
 
             {/* Optional Hero Image */}
             <img
-                style={{ width: 600, borderRadius: 500 ,margin:'auto'}}
+                style={{ width: 600, borderRadius: 500, margin: 'auto' }}
                 src="https://i.postimg.cc/J0bgVSYH/128.jpg"
                 alt="Web Developer"
                 className="hero-image"
             />
 
             {/* Professional Resume Section */}
-            <div className="resume-details" 
-              style={{  margin:'auto'}}
-              >
+            <div className="resume-details"
+                style={{ margin: 'auto' }}
+            >
                 <h2>📄 Resume Snapshot</h2>
                 <div className="resume-grid">
 
@@ -98,11 +98,14 @@ const Hero = () => {
                         <h3>📍 Contact Info</h3>
                         <ul>
                             <li>📍 Hamindpur, Alwar (Rajasthan), PIN: 301701</li>
-                         
+
                             <li>📧 rajatjangra940@gmail.com</li>
-                            <li>🌐 GitHub: <a href="https://github.com/jangrarajat" target="_blank">github.com/jangrarajat</a></li>
+                            <li>🌐 GitHub: <a href="https://github.com/jangrarajat" target="_blank" style={{color:'white'}}>github.com/jangrarajat</a></li>
                         </ul>
                     </div>
+                   
+
+                    <ResumeDownloadButton/>
                 </div>
             </div>
         </section>
