@@ -32,7 +32,8 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-card glass">
-        <h2>Welcome Back 👋</h2>
+        <h1> Login Page</h1>
+        <h2>👋"Hi there! Welcome to Rajat Jangra’s Portfolio "</h2>
         <form onSubmit={loginWithEmail}>
           <input
             type="email"
@@ -69,7 +70,10 @@ const Login = () => {
 
         <p>
           Don't have an account?{" "}
-          <span onClick={() => navigate("/signup")} className="signup-link">
+          <span onClick={() => navigate("/signup")} 
+          className="signup-link"
+          style={{color:'blue' , cursor:'pointer'}}
+          >
             Sign up
           </span>
         </p>
