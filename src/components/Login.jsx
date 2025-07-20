@@ -1,7 +1,13 @@
  // src/components/Login.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  setPersistence,
+  browserLocalPersistence,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
 import { auth, provider } from "../firebase";
 import "../styles/Login.css";
 
@@ -13,6 +19,7 @@ const Login = () => {
   const loginWithEmail = async (e) => {
     e.preventDefault();
     try {
+      await setPersistence(auth, browserLocalPersistence); // Persistent login
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/landing");
     } catch (err) {
@@ -22,6 +29,7 @@ const Login = () => {
 
   const loginWithGoogle = async () => {
     try {
+      await setPersistence(auth, browserLocalPersistence); // Persistent login
       await signInWithPopup(auth, provider);
       navigate("/landing");
     } catch (err) {
@@ -53,26 +61,24 @@ const Login = () => {
         <p className="or">or</p>
 
         <button className="google-btn" onClick={loginWithGoogle}>
-          <img  
-          style={{width:20 , marginLeft:20}}
+          <img
+            style={{ width: 20, marginLeft: 20 }}
             src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
             alt="Google"
           />
           Sign in with Google
         </button>
 
-        <button
-          className="otp-btn"
-          onClick={() => navigate("/otp")}
-        >
+        <button className="otp-btn" onClick={() => navigate("/otp")}>
           📱 Login with Phone OTP
         </button>
 
         <p>
           Don't have an account?{" "}
-          <span onClick={() => navigate("/signup")} 
-          className="signup-link"
-          style={{color:'blue' , cursor:'pointer'}}
+          <span
+            onClick={() => navigate("/signup")}
+            className="signup-link"
+            style={{ color: "blue", cursor: "pointer" }}
           >
             Sign up
           </span>
