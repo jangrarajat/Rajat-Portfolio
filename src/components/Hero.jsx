@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="resume-details"
                 style={{ margin: 'auto' }}
             >
-                <h2>📄 Resume Snapshot</h2>
+                <h2 style={{color:'white'}}>📄 Resume Snapshot</h2>
                 <div className="resume-grid">
 
                     <div>
