@@ -1,4 +1,4 @@
- // src/components/Login.jsx
+// src/components/Login.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,6 +7,7 @@ import {
   browserLocalPersistence,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signInWithRedirect,
 } from "firebase/auth";
 import { auth, provider } from "../firebase";
 import "../styles/Login.css";
@@ -30,8 +31,17 @@ const Login = () => {
   const loginWithGoogle = async () => {
     try {
       await setPersistence(auth, browserLocalPersistence); // Persistent login
-      await signInWithPopup(auth, provider);
-      navigate("/landing");
+
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        // For mobile browsers: use redirect to avoid popup-block
+        await signInWithRedirect(auth, provider);
+      } else {
+        // For desktop: popup is fine
+        await signInWithPopup(auth, provider);
+        navigate("/landing");
+      }
     } catch (err) {
       alert("Google login failed: " + err.message);
     }
@@ -41,7 +51,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card glass">
         <h1> Login Page</h1>
-        <h2>👋"Hi there! Welcome to Rajat Jangra’s Portfolio "</h2>
+        <h2>👋 Hi there! Welcome to Rajat Jangra’s Portfolio </h2>
         <form onSubmit={loginWithEmail}>
           <input
             type="email"
