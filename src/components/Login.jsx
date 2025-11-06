@@ -47,12 +47,12 @@ const Login = () => {
             required
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Login</button>
+          <button type="submit " className="glass hover:glass ">Login</button>
         </form>
 
         <p className="or">or</p>
 
-        <button className="google-btn flex justify-center gap-2  mb-5" onClick={loginWithGoogle}>
+        <button className="google-btn flex justify-center gap-2  mb-5 glass hover:glass" onClick={loginWithGoogle}>
           <img
             style={{ width: 20, marginLeft: 20 }}
             src="https://cdn-icons-png.flaticon.com/512/300/300221.png"

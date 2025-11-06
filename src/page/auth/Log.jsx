@@ -7,10 +7,10 @@ function Profile() {
 
     return (
         <>
-          
-  <div className="h-[100vh] w-screen bg-white ">
 
-  </div>
+            <div className="h-[100vh] w-screen bg-white ">
+
+            </div>
         </>
     );
 }

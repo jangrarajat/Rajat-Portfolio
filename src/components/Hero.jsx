@@ -8,14 +8,14 @@ import ResumeDownloadButton from "./Button";
 const Hero = () => {
     return (
         <section className="hero-section glass  ">
-            <div className="hero-content">
+            <div className="hero-content flex flex-col md:flex-col">
                 <h1 className="hero-title mt-10 ">
                     Hey, I'm <br />
                     <span className="highlight text-6xl text-blue-600 font-bold">
                         Rajat Jangra
                     </span>
                 </h1>
-                <p className="hero-desc mt-5 font-extralight  text-2xl">
+                <p className="hero-desc mt-20 font-extralight  text-2xl ">
                     A passionate
                     <strong className="mx-2">
                         Web Developer
