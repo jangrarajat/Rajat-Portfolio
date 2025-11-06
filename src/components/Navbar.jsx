@@ -54,24 +54,24 @@ const Navbar = () => {
           <ul className="menu bg-base-200 min-h-full gap-3  w-[100%] md:w-80 p-4">
             {/* Sidebar content here */}
             <li className="mt-28">
-              <button className="   gap-2 glass hover:bg-transparent border-gray-500"
+              <button className="   gap-2 glass hover:glass border-gray-500"
 
               >
                 Home
               </button>
             </li>
             <li  >
-              <button className="   gap-2 glass hover:bg-transparent border-gray-500" >
+              <button className="   gap-2 glass  duration-300 hover:glass border-gray-500" >
                 Contect
               </button>
             </li>
             <li  >
-              <button className="   gap-2 glass hover:bg-transparent border-gray-500" >
+              <button className="   gap-2 glass hover:glass border-gray-500" >
               About
               </button>
             </li>
             <li  >
-              <button className="   gap-2 glass hover:bg-transparent border-gray-500"
+              <button className="   gap-2 glass hover:glass  duration-200 border-gray-500"
                 onClick={handleLogout}
               >
                 Signout 

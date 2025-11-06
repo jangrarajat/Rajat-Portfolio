@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../firebase";
 import "../styles/Login.css";
+import { UserRound } from "lucide-react";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -32,8 +33,8 @@ const Login = () => {
   return (
     <div className="login-container ">
       <div className="login-card glass  ">
-             <h1 className="text-gray-500"> Login Account</h1>
-       
+        <h1 className="text-gray-500 text-2xl flex  justify-center items-center gap-2"><UserRound /> Login Account</h1>
+
         <form onSubmit={loginWithEmail} className="mt-5">
           <input
             type="email"
@@ -50,7 +51,7 @@ const Login = () => {
           <button type="submit " className="glass hover:glass ">Login</button>
         </form>
 
-        <p className="or">or</p>
+        <div className="divider">OR</div>
 
         <button className="google-btn flex justify-center gap-2  mb-5 glass hover:glass" onClick={loginWithGoogle}>
           <img
@@ -61,14 +62,12 @@ const Login = () => {
           Sign in with Google
         </button>
 
-       
 
-        <p>
+
+        <p className="font-extralight text-start">
           Don't have an account?{" "}
           <span onClick={() => navigate("/signup")}
-            className="signup-link"
-            style={{ color: 'blue', cursor: 'pointer' }}
-          >
+            className="signup-link text-blue-600 ">
             Sign up
           </span>
         </p>
