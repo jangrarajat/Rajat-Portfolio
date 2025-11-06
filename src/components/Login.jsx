@@ -1,4 +1,4 @@
- // src/components/Login.jsx
+// src/components/Login.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
@@ -30,11 +30,11 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-card glass">
-        <h1> Login Page</h1>
-        <h2>👋"Hi there! Welcome to Rajat Jangra’s Portfolio "</h2>
-        <form onSubmit={loginWithEmail}>
+    <div className="login-container ">
+      <div className="login-card glass  ">
+             <h1 className="text-gray-500"> Login Account</h1>
+       
+        <form onSubmit={loginWithEmail} className="mt-5">
           <input
             type="email"
             placeholder="Email"
@@ -52,27 +52,22 @@ const Login = () => {
 
         <p className="or">or</p>
 
-        <button className="google-btn" onClick={loginWithGoogle}>
-          <img  
-          style={{width:20 , marginLeft:20}}
+        <button className="google-btn flex justify-center gap-2  mb-5" onClick={loginWithGoogle}>
+          <img
+            style={{ width: 20, marginLeft: 20 }}
             src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
             alt="Google"
           />
           Sign in with Google
         </button>
 
-        <button
-          className="otp-btn"
-          onClick={() => navigate("/otp")}
-        >
-          📱 Login with Phone OTP
-        </button>
+       
 
         <p>
           Don't have an account?{" "}
-          <span onClick={() => navigate("/signup")} 
-          className="signup-link"
-          style={{color:'blue' , cursor:'pointer'}}
+          <span onClick={() => navigate("/signup")}
+            className="signup-link"
+            style={{ color: 'blue', cursor: 'pointer' }}
           >
             Sign up
           </span>

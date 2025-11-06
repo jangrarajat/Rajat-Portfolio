@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Log from "./page/auth/Log";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/otp" element={<OTPLogin />} />
+        <Route path="/log" element={<Log/>}/>
         <Route
           path="/landing"
           element={
