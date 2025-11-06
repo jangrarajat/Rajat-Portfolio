@@ -13,19 +13,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar glass">
-      <h1 className="logo">🚀 Rajat.web_Developer</h1>
+    <nav className="navbar glass left-0 h-28">
+
+      <h1 className="logo  md:text-4xl font-bold flex items-center gap-2 cursor-pointer">
+        <img
+          className="w-12 rounded-full "
+          src="https://res.cloudinary.com/drrj8rl9n/image/upload/v1762423197/WhatsApp_Image_2025-11-06_at_15.28.51_8be05dce_svmqid.jpg"
+          alt="logo" />
+        Web_Developer
+      </h1>
+
+
+    
 
       <ul className="nav-links">
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
 
-        {/* Resume Download Button */}
-        
+
 
         {/* Logout Button */}
         <li>
@@ -39,6 +42,8 @@ const Navbar = () => {
         <li></li>
       </ul>
     </nav>
+
+
   );
 };
 

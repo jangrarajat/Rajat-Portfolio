@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import OTPLogin from "./components/OTPLogin";
+
 
 // Landing Page Components
 import Navbar from "./components/Navbar";
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/otp" element={<OTPLogin />} />
+      
         <Route path="/log" element={<Log/>}/>
         <Route
           path="/landing"
@@ -27,7 +27,7 @@ function App() {
               <Navbar />
               <Hero />
               <Skills />
-              <Contact />
+            
               <Footer />
             </>
           }

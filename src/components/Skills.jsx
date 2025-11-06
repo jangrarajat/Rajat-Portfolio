@@ -8,12 +8,13 @@ const skills = [
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Taildwind", logo: "https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp" },
 ];
 
 const Skills = () => {
   return (
-    <section className="skills-section" id="skills">
-      <h2 className="section-title">🚀 My Skills</h2>
+    <section className="skills-section " id="skills">
+      <h2 className="section-title font-bold text-blue-500 "> My Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, i) => (
           <div key={i} className="skill-card">
