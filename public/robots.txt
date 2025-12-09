@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rajat-portfolio-green.vercel.app/sitemap.xml
