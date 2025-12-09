@@ -157,9 +157,9 @@ h2 {
 }
 
 #profile-img {
-    height: 300px;
+    height: 100px;
     margin-top: 10px;
-    border-radius: 2%;
+    border-radius: 50%;
 }
 
 /* Glassmorphism Cards */
