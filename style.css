@@ -192,8 +192,14 @@ h2 {
 }
 
 .skill-tags span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 2px;
     padding: 8px 15px;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 20px;
     font-size: 0.9rem;
     color: var(--accent-color);
